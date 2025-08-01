@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociales</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: url('Imagenes/Fondo2.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            margin: 20px 0;
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .avatar {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .avatar:hover {
+            transform: scale(1.05);
+        }
+
+        .social-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 60px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-button i {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .facebook { background-color: #1877F2; }
+        .instagram { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80); }
+        .tiktok { background-color: #000000; }
+        .youtube { background-color: #FF0000; }
+        .discord { background-color: #5865F2; }
+        .twitter { background-color: #1DA1F2; }
+        .paypal { background-color: #003087; }
+
+        .security-notice {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            color: white;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 0.9rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .security-notice h3 {
+            margin-bottom: 10px;
+            color: #FFD700;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .social-button {
+                width: 160px;
+                height: 50px;
+                font-size: 0.9rem;
+            }
+            
+            .avatar {
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+                margin: 15px 0;
+            }
+            
+            .social-buttons {
+                gap: 10px;
+                margin-top: 20px;
+            }
+            
+            .social-button {
+                width: calc(50% - 10px);
+                height: 45px;
+                font-size: 0.8rem;
+            }
+            
+            .social-button i {
+                font-size: 18px;
+                margin-right: 5px;
+            }
+            
+            .avatar {
+                max-width: 120px;
+                border-width: 3px;
+            }
+
+            .security-notice {
+                font-size: 0.8rem;
+                padding: 10px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Imagenes/Avatar.png" alt="Avatar" class="avatar">
+        <h1>Mis Redes Sociales</h1>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/share/15jA2zfM8S/?mibextid=wwXIfr" class="social-button facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+            </a>
+            <a href="https://www.instagram.com/wasabigam1ng?igsh=c2c3MmQybHhldWJo&utm_source=qr" class="social-button instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+            <a href="https://www.instagram.com/wasabigam1ng?igsh=c2c3MmQybHhldWJo&utm_source=qr" class="social-button tiktok" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                TikTok
+            </a>
+            <a href="https://youtube.com/@wasabi_gam1ng?si=gtMu6AKoU0KH-NTS" class="social-button youtube" target="_blank">
+                <i class="fab fa-youtube"></i>
+                YouTube
+            </a>
+            <a href="https://discord.gg/vmCx6D4VPP" class="social-button discord" target="_blank">
+                <i class="fab fa-discord"></i>
+                Discord
+            </a>
+            <a href="https://x.com/wasabi_gam1ng?s=21" class="social-button twitter" target="_blank">
+                <i class="fab fa-twitter"></i>
+                Twitter (x)
+            </a>
+            <a href="https://paypal.me/WasabiGam1ng" class="social-button paypal" target="_blank">
+                <i class="fab fa-paypal"></i>
+                PayPal
+            </a>
+        </div>
+
+        <div class="security-notice">
+            <h3>🔔 Importante:</h3>
+            <p>Agradecemos mucho tu apoyo y generosidad. Sin embargo, por tu seguridad, te recomendamos:</p>
+            <ul style="margin-top: 10px; margin-left: 20px;">
+                <li>Verificar siempre que estás usando nuestros enlaces y redes sociales oficiales antes de donar.</li>
+                <li>Donar solo cantidades con las que te sientas cómodo/a.</li>
+                <li>Si tienes dudas, contáctanos directamente a través de nuestros canales verificados.</li>
+            </ul>
+            <p style="margin-top: 10px; text-align: center; font-weight: bold;">¡Tu seguridad es primero!
+                atte. Tu amigo Wasabi_Gam1ng 😊
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Opcional: Puedes agregar tracking de clics si lo deseas
+        document.querySelectorAll('.social-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const socialNetwork = this.querySelector('i').className.split(' ')[1].replace('fa-', '');
+                console.log(`Redirigiendo a ${socialNetwork}`);
+                // Aquí podrías agregar Google Analytics o otro sistema de tracking
+            });
+        });
+    </script>
+</body>
+</html>
